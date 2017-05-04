@@ -48,7 +48,7 @@
 
 11. Подключитесь к серверу 
 
-![1](https://cloud.githubusercontent.com/assets/28348635/25700299/d1089e4e-30cf-11e7-8583-eba4963b3136.png)
+![default](https://cloud.githubusercontent.com/assets/28348635/25719710/fdaf0030-3112-11e7-989a-96c8db6b46f1.png)
 
 12. Создать БД с название hh, построенной по данной схеме ![database_scr](https://cloud.githubusercontent.com/assets/28348635/25700197/31a7553e-30cf-11e7-8fd5-3f047bfa3b40.PNG)
 
