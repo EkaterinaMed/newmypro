@@ -59,7 +59,8 @@
 
 4. Для создания нового запроса, необходимо нажать на кнопку "Создать новый". Появляется новое окно.
 
-5. В поле, где меня прросят ввести запрос печатаю запрос на SQL языке!, в данном случае запрос выгляди так: ***select Experience.text_experience as 'Опыт', count(distinct Name_vacancy.id_name_vacancy) as 'Количество вакансий' from Experience,Name_vacancy,Vacancy where Experience.id_experience=Vacancy.id_experience and Vacancy.id_name_vacancy=Name_vacancy.id_name_vacancy group by Experience.text_experience.***  **Обратите внимание! что ключевое слово Go в конце запроса не ставится.** ![1](https://cloud.githubusercontent.com/assets/28348635/25700918/8f2187ea-30d2-11e7-9ced-710ce901f694.png)
+5. В поле, где меня прросят ввести запрос печатаю запрос на SQL языке!, в данном случае запрос выгляди так: ***select Experience.text_experience as 'Опыт', count(distinct Name_vacancy.id_name_vacancy) as 'Количество вакансий' from Experience,Name_vacancy,Vacancy where Experience.id_experience=Vacancy.id_experience and Vacancy.id_name_vacancy=Name_vacancy.id_name_vacancy group by Experience.text_experience.*** 
+**Обратите внимание! что ключевое слово Go в конце запроса не ставится.** ![1](https://cloud.githubusercontent.com/assets/28348635/25700918/8f2187ea-30d2-11e7-9ced-710ce901f694.png)
 
 6. После того, как программы выполнит запрос, появлется в таблице результат этого запроса. 
 
