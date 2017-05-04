@@ -43,9 +43,11 @@
 ![1](https://cloud.githubusercontent.com/assets/28348635/25705108/c0eb06ae-30e4-11e7-8cdb-e9c36f616ccd.png)
 
 10. После установки запустите этот файл 
+
 ![1](https://cloud.githubusercontent.com/assets/28348635/25705157/04e1bd62-30e5-11e7-9efa-d670fc14526d.png)
 
 11. Подключитесь к серверу 
+
 ![1](https://cloud.githubusercontent.com/assets/28348635/25700299/d1089e4e-30cf-11e7-8583-eba4963b3136.png)
 
 12. Создать БД с название hh, построенной по данной схеме ![database_scr](https://cloud.githubusercontent.com/assets/28348635/25700197/31a7553e-30cf-11e7-8fd5-3f047bfa3b40.PNG)
