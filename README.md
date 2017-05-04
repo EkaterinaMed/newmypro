@@ -44,7 +44,7 @@
 
 10. После установки запустите этот файл 
 
-![1](https://cloud.githubusercontent.com/assets/28348635/25705157/04e1bd62-30e5-11e7-9efa-d670fc14526d.png)
+![default](https://cloud.githubusercontent.com/assets/28348635/25719522/739ad950-3112-11e7-8283-1ef323c2f04e.png)
 
 11. Подключитесь к серверу 
 
