@@ -18,15 +18,46 @@
 ![default](https://cloud.githubusercontent.com/assets/28348635/25701820/b42c5f34-30d6-11e7-92c9-833e669acea3.png)
 
 ### Работа с SQL Server
-1. Подключиться к серверу 
+1.Скачать [MSSQL Server 2016 Express](https://www.microsoft.com/ru-ru/sql-server/sql-server-editions-express)
 
+2. Запустить exe-ный файл, открыть его, выбрать расположение куда будет загружаться данный файл. 
+![1](https://cloud.githubusercontent.com/assets/28348635/25704336/b651d856-30e1-11e7-9f87-56a50a89f8e6.png)
+
+3. После установки открыть файл setup.exe.
+
+4. В окне "Центр установки SQL server" нажать "Установка"-"Новая установка изолированного SQL Server или добавление компонентов к существующему экземпляру"
+![1](https://cloud.githubusercontent.com/assets/28348635/25704591/bfcab4ba-30e2-11e7-9b37-32adc5b7eb42.png)
+
+5. После установки правил поддержки, нажмите "ОК".
+![1](https://cloud.githubusercontent.com/assets/28348635/25704752/65ac8228-30e3-11e7-84c8-2a71ccfaa974.png)
+
+6. Выберете тип устанвки: "Выполнить новую установку"
+
+7. В окне "Ключ продукта" укажите свободный выпуск, согласитесь с условиями лицензии, выберете компоненты для установки
+![1](https://cloud.githubusercontent.com/assets/28348635/25704926/14d5a05e-30e4-11e7-9190-db555ab5e26d.png)
+
+8. Введите название сервера в поле "Именнованый экземпляр" 
+![1](https://cloud.githubusercontent.com/assets/28348635/25705025/7c71659a-30e4-11e7-9627-8990df0787d3.png)
+
+9.Установите SQL Server
+![1](https://cloud.githubusercontent.com/assets/28348635/25705108/c0eb06ae-30e4-11e7-8cdb-e9c36f616ccd.png)
+
+10. После установки запустите этот файл 
+![1](https://cloud.githubusercontent.com/assets/28348635/25705157/04e1bd62-30e5-11e7-9efa-d670fc14526d.png)
+
+11. Подключитесь к серверу 
 ![1](https://cloud.githubusercontent.com/assets/28348635/25700299/d1089e4e-30cf-11e7-8583-eba4963b3136.png)
 
-2. Создать БД с название hh, построенной по данной схеме ![database_scr](https://cloud.githubusercontent.com/assets/28348635/25700197/31a7553e-30cf-11e7-8fd5-3f047bfa3b40.PNG)
+12. Создать БД с название hh, построенной по данной схеме ![database_scr](https://cloud.githubusercontent.com/assets/28348635/25700197/31a7553e-30cf-11e7-8fd5-3f047bfa3b40.PNG)
 
-3. Заполнить БД данными с помощью программы [hhparser](https://github.com/GaPanda/hhparser) по запросу IT-технологии
+13.Чтобы создать БД, необходимо скачать [здесь](https://yadi.sk/d/3nPADzE13GkaBz) архив. Распаковать с помощью архиватора. Найти папку mssql и открыть файл crebas.sql в sql exspress/
 
-4. Сохранить все действия
+14. После открытия файла, нажать на кнопку "Выполнить". Ваша БД создана. 
+![1](https://cloud.githubusercontent.com/assets/28348635/25705488/251f2988-30e6-11e7-9877-e62eaf3bce91.png)
+
+15. Заполнить БД данными с помощью программы [hhparser](https://github.com/GaPanda/hhparser) по запросу IT-технологии
+
+16. Сохранить все действия
 
 ### Установка скомпилированнной программы:
 
