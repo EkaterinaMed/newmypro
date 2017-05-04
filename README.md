@@ -5,12 +5,16 @@
 ### Необходимые программы:
 
 1. [MSSQL Server 2016 Express](https://www.microsoft.com/ru-ru/sql-server/sql-server-editions-express)
+Необходим для создания БД.
 
 2. [MS Power BI](https://powerbi.microsoft.com/ru-ru/downloads/)
+Необходим для визуализации анализа данных.
 
 3. [hhparser](https://github.com/GaPanda/hhparser)
+С помощью этой программы происходит загрузка данных в БД
 
 4. [Microsoft Visual Studio](https://www.visualstudio.com/ru/downloads/)
+![default](https://cloud.githubusercontent.com/assets/28348635/25701755/5c8cb97c-30d6-11e7-956e-16419cfe89b4.png)
 
 ### Работа с SQL Server
 1. Подключиться к серверу 
@@ -48,10 +52,16 @@
 
 2. Чтобы посмотреть отчет по запросу, необходимо нажать на кнопку "Показать отчет". После того как это сделать, откроется файл с отчетом по этому запросу в приложении Power BI(**Не забудьте его установить!**)
 ![1](https://cloud.githubusercontent.com/assets/28348635/25700786/d742370a-30d1-11e7-85ab-9efb817ee89e.png)
+
 3. После просмотра отчета, возвращаюсь к окну программы.
+
 4. Для создания нового запроса, необходимо нажать на кнопку "Создать новый". Появляется новое окно.
+
 5. В поле, где меня прросят ввести запрос печатаю запрос на SQL языке!, в данном случае запрос выгляди так:select Experience.text_experience as 'Опыт', count(distinct Name_vacancy.id_name_vacancy) as 'Количество вакансий' from Experience,Name_vacancy,Vacancy where Experience.id_experience=Vacancy.id_experience and Vacancy.id_name_vacancy=Name_vacancy.id_name_vacancy group by Experience.text_experience. **Обратите внимание! что ключевое слово Go в конце запроса не ставится** ![1](https://cloud.githubusercontent.com/assets/28348635/25700918/8f2187ea-30d2-11e7-9ced-710ce901f694.png)
+
 6. После того, как программы выполнит запрос, появлется в таблице результат этого запроса. 
+
 7. Чтобы увидеть диаграмму по такому запросу, нужно в поля "Значение 1" и "Значение 2", ввести название столбцов, по которым будет строиться диаграмма, а далее нажать на кнопку "Отобразить диаграмму" (В моем случае в поле со "Значение 1" ввожу "Опыт", "Значение 2" - "Количество вакансий"). ![1](https://cloud.githubusercontent.com/assets/28348635/25694866/5e0befce-30b9-11e7-94ad-c4c1ff7b8bc4.png)
+
 8. Чтобы ввести новый запрос, необходимо нажать на кнопку "Отчистить поля"и ввести новые значения. 
 
