@@ -14,6 +14,7 @@
 С помощью этой программы происходит загрузка данных в БД
 
 4. [Microsoft Visual Studio](https://www.visualstudio.com/ru/downloads/)
+
 ![default](https://cloud.githubusercontent.com/assets/28348635/25701820/b42c5f34-30d6-11e7-92c9-833e669acea3.png)
 
 ### Работа с SQL Server
