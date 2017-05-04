@@ -4,7 +4,7 @@
 
 ### Необходимые программы:
 
-1. [MSSQL Server 2016 Express](https://www.microsoft.com/ru-ru/sql-server/sql-server-editions-express)
+1. [MSSQL Server 2008 Express](https://www.microsoft.com/ru-ru/download/details.aspx%3Fid%3D1695)
 Необходим для создания БД.
 
 2. [MS Power BI](https://powerbi.microsoft.com/ru-ru/downloads/)
