@@ -18,7 +18,7 @@
 ![default](https://cloud.githubusercontent.com/assets/28348635/25701820/b42c5f34-30d6-11e7-92c9-833e669acea3.png)
 
 ### Работа с SQL Server
-1.Скачать [MSSQL Server 2016 Express](https://www.microsoft.com/ru-ru/sql-server/sql-server-editions-express)
+1.Скачать [MSSQL Server 2008 Express](https://www.microsoft.com/ru-ru/download/details.aspx%3Fid%3D1695)
 
 2. Запустить exe-ный файл, открыть его, выбрать расположение куда будет загружаться данный файл. 
 ![1](https://cloud.githubusercontent.com/assets/28348635/25704336/b651d856-30e1-11e7-9f87-56a50a89f8e6.png)
