@@ -19,6 +19,7 @@
 
 ### Работа с SQL Server
 1. Подключиться к серверу 
+
 ![1](https://cloud.githubusercontent.com/assets/28348635/25700299/d1089e4e-30cf-11e7-8583-eba4963b3136.png)
 
 2. Создать БД с название hh, построенной по данной схеме ![database_scr](https://cloud.githubusercontent.com/assets/28348635/25700197/31a7553e-30cf-11e7-8fd5-3f047bfa3b40.PNG)
