@@ -52,7 +52,7 @@
 
 12. Создать БД с название hh, построенной по данной схеме ![database_scr](https://cloud.githubusercontent.com/assets/28348635/25700197/31a7553e-30cf-11e7-8fd5-3f047bfa3b40.PNG)
 
-13.Чтобы создать БД, необходимо скачать [здесь](https://yadi.sk/d/3nPADzE13GkaBz) архив. Распаковать с помощью архиватора. Найти папку mssql и открыть файл crebas.sql в sql exspress/
+13.Чтобы создать БД, необходимо скачать [здесь](https://github.com/GaPanda/hhparser) архив. Распаковать с помощью архиватора. Найти папку mssql и открыть файл crebas.sql в sql exspress/
 
 14. После открытия файла, нажать на кнопку "Выполнить". Ваша БД создана. 
 ![1](https://cloud.githubusercontent.com/assets/28348635/25705488/251f2988-30e6-11e7-9877-e62eaf3bce91.png)
