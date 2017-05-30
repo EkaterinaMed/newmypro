@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_777.Analisys">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAAgAAKAgABAQAACAAAACAggYEAAAAGQACICAAAA=</HashCode>
+      <FileName>Analisys.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Visual" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_777.menu">
+    <Position X="2.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACABAACAAAYAAAAAGAAAAAAAAA=</HashCode>
+      <FileName>menu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Analisys" />
+      <Property Name="Zapros" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_777.Program">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="menu" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="_777.Visual">
+    <Position X="9.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQgAAiAAKAAABAACACAAAJSEAg4EAAAEHAACACAgAI=</HashCode>
+      <FileName>Visual.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_777.Zapros">
+    <Position X="4.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAwAAwAAKAAABAAAACAAAASAEgYEAAAEGAYCAAEAAA=</HashCode>
+      <FileName>Zapros.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
