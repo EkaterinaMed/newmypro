@@ -75,7 +75,7 @@
 
 ###  Пример работы с программой:
 
-1. После запуска программы, открывается меню и перед пользователем стоит выбор: поиск данных, анализ данных. ![44](https://cloud.githubusercontent.com/assets/28348635/26520212/07ef214e-42d7-11e7-8ce7-935567f27b36.png)
+1. После запуска программы, открывается меню и перед пользователем стоит выбор: поиск данных, анализ данных, справка или проверка соединения. ![1](https://cloud.githubusercontent.com/assets/28348635/26572452/a590a952-4522-11e7-8586-0857f01a1f78.png)
 
 2.Нажав на «Поиск данных» возникает новое окно – окно поиска вакансий. В текстовое поле необходимо ввести запрос, например: «”ГУАП”,”Power BI”,”IT”», и нажать на кнопку «Найти вакансии». 
 ![3](https://cloud.githubusercontent.com/assets/28348635/26520251/5c1edc82-42d7-11e7-97e9-67f8d2d3b192.png)
@@ -91,27 +91,27 @@
 6. Если вашего запроса не оказалось в базе данных, то выскакивает сообщение «Такого запроса в БД не нашлось», и предлагается загрузка данных в БД с помощью программы «hhparser.ru». Если пользователь ответит «Да», то запустится эта программа, а если «Нет», то сообщение закроется
 ![6](https://cloud.githubusercontent.com/assets/28348635/26520286/1a500e1a-42d8-11e7-9782-e4b3d459525b.png)
 
-7.Нажав на «Анализ данных», появляется другое окно
+7.Нажав на «Анализ данных»» - «Анализ существующих запросов», появляется другое окно.
 
-![12](https://cloud.githubusercontent.com/assets/28348635/26520292/3e625f7e-42d8-11e7-8811-c82908c1cb33.png)
+![2](https://cloud.githubusercontent.com/assets/28348635/26572478/c2bb82fe-4522-11e7-9952-aa0b1ca8a82b.png)
 
 8.С помощью флажка можно выбрать уже существующий запрос, увидеть его анализ и визуализацию. Чтобы посмотреть отчет необходимо нажать на кнопку «Показать отчет». Далее откроется среда MS Power BI, в которой этот отчет находится.
 
-![124](https://cloud.githubusercontent.com/assets/28348635/26520303/5d4c0886-42d8-11e7-9d50-7f5f23a5e312.png)
+![3](https://cloud.githubusercontent.com/assets/28348635/26572513/e5b81182-4522-11e7-9c57-5d34d3ce92d9.png)
 ![56](https://cloud.githubusercontent.com/assets/28348635/26520307/691f4970-42d8-11e7-8c7c-f6451b5fdb8f.png)
 
-9.После просмотра, возвращайтесь к окну программы. Чтобы создать новый отчет, нужно кликнуть по кнопке «Создать новый». Откроется новое окно
-![67](https://cloud.githubusercontent.com/assets/28348635/26520314/82049292-42d8-11e7-8e17-61cc16497f2d.png)
+9.	После просмотра, возвращайтесь к меню программы. Чтобы создать новый отчет в MS Power BI, нужно выбрать «Анализ данных» - «Создать новый» - «Создать новый в MS Power BI» и откроется приложение MS Power BI. Чтобы создать новый отчет посредством функции chart, то нужно выбрать элемент «Создать новый в chart» и откроется новое окно
+![4](https://cloud.githubusercontent.com/assets/28348635/26572533/fead26be-4522-11e7-8518-5067dd684f9a.png)
 
-10.В текстовое поле вводим поисковой запрос на sql-языке. Например, введем следующий запрос и нажмем «Выполнить»:
-select distinct Experience.text_experience as 'Опыт', count(distinct Name_vacancy.id_name_vacancy) as 'Количество вакансий' from Experience,Name_vacancy,Vacancy,Query_vacancy,Query_name,Query where Query_vacancy.id_vacancy=Vacancy.id_vacancy and Query_name.id_query_name = Query.id_query_name and Query.id_query = Query_vacancy.id_query and name_query='"IT"' and Experience.id_experience = Vacancy.id_experience and Vacancy.id_name_vacancy = Name_vacancy.id_name_vacancy group by Experience.text_experience
+10.	Здесь можно задать названия столбцов или агрегатную функцию соблюдая синтаксис языка sql, а также выбрать фильтрацию по запросу. Например, введем следующее в первое текстовое поле: Experience.text_experience,count(distinct Name_vacancy.id_name_vacancy) as 'Количество вакансий'
+Во второе текстовое поле зададим фильтр: text_experience <> 'не требуется'
 Обратите внимание, что в конце запроса не ставиться слово go! 
-![76](https://cloud.githubusercontent.com/assets/28348635/26520317/9ed22d30-42d8-11e7-84ea-8bfbff76e863.png)
+![5](https://cloud.githubusercontent.com/assets/28348635/26572566/1d06b17a-4523-11e7-9ac1-96a6245d91e3.png)
 
 11. В поле появился результат выполнения запроса. Чтобы отобразить диаграмму, необходимо ввести в качестве значений названия столбцов из таблицы, выбрать тип отображения данных (Столбчатая диаграмма, круговая диаграмма, график), а далее нажать кнопку "Отобразить диаграмму".
-![1245](https://cloud.githubusercontent.com/assets/28348635/26520320/b14202ce-42d8-11e7-9474-c98fcd637551.png)
-![54](https://cloud.githubusercontent.com/assets/28348635/26520325/ba7cc69e-42d8-11e7-899c-21171eea23df.png)
-![764](https://cloud.githubusercontent.com/assets/28348635/26520329/c1e1b6e2-42d8-11e7-9c29-c54f16de1c76.png)
+![6](https://cloud.githubusercontent.com/assets/28348635/26572599/3a5efaca-4523-11e7-9042-819992aa35a3.png)
+![7](https://cloud.githubusercontent.com/assets/28348635/26572609/4425d4ca-4523-11e7-8d7a-22b8a320ec23.png)
+![8](https://cloud.githubusercontent.com/assets/28348635/26572618/4f0033d6-4523-11e7-9617-4d03e737930e.png)
 
 12. Чтобы ввести новый запрос, необходимо нажать на кнопку «Отчистить поле» и ввести новые значения.
 
