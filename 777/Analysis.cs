@@ -86,7 +86,7 @@ namespace _777
                 case "Количество вакансий и компаний"://если вызвали, то запускаем новый процесс,открываем MS POWER BI
                     try
                     {
-                        Process.Start(@"C:\Users\dns\Desktop\учеба\диплом\777\1.pbix");
+                        Process.Start(@"C:\Users\dns\Desktop\777\1.pbix");
                     }
                     catch (Exception)
                     {
@@ -97,7 +97,7 @@ namespace _777
                     break;
                 case "Максимальная зарплата по станциям метро"://если вызвали, то запускаем новый процесс,открываем MS POWER BI
                     try {
-                        Process.Start(@"C:\Users\dns\Desktop\учеба\диплом\777\2.pbix");
+                        Process.Start(@"C:\Users\dns\Desktop\777\2.pbix");
                     }
                     catch (Exception)
                     {
@@ -107,7 +107,7 @@ namespace _777
                     break;
                 case "Количество вакансий по станциям метро"://если вызвали, то запускаем новый процесс,открываем MS POWER BI
                     try {
-                        Process.Start(@"C:\Users\dns\Desktop\учеба\диплом\777\3.pbix");
+                        Process.Start(@"C:\Users\dns\Desktop\777\3.pbix");
                     }
                     catch (Exception)
                     {
@@ -117,7 +117,7 @@ namespace _777
                     break;
                 case "Значение зарплаты по вакансиям, находящихся на м.Чернышевская"://если вызвали, то запускаем новый процесс,открываем MS POWER BI
                     try {
-                        Process.Start(@"C:\Users\dns\Desktop\учеба\диплом\777\4.pbix");
+                        Process.Start(@"C:\Users\dns\Desktop\777\4.pbix");
                     }
                     catch (Exception)
                     {
@@ -127,7 +127,7 @@ namespace _777
                     break;
                 case "Количество вакансий по опыту работы"://если вызвали, то запускаем новый процесс,открываем MS POWER BI
                     try {
-                        Process.Start(@"C:\Users\dns\Desktop\учеба\диплом\777\5.pbix");
+                        Process.Start(@"C:\Users\dns\Desktop\777\5.pbix");
                     }
                     catch (Exception)
                     {
