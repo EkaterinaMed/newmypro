@@ -44,7 +44,7 @@ namespace _777
                 "')" +
                 "begin (Select distinct Name_vacancy.name_vacancy from Name_vacancy,Vacancy, Query,Query_name,Query_vacancy where Name_vacancy.id_name_vacancy=Vacancy.id_name_vacancy and Query.id_query= Query_vacancy.id_query and Query_vacancy.id_vacancy=Vacancy.id_vacancy and Query_name.id_query_name = Query.id_query_name  and Query_name.name_query ='" + st +
                 "')end";
-                StreamWriter SW = new StreamWriter(new FileStream(@"C:\Users\dns\Desktop\учеба\диплом\777\hhparser\FileName.txt", FileMode.Create, FileAccess.Write));//записываем строку в файл
+                StreamWriter SW = new StreamWriter(new FileStream(@"C:\Users\dns\Desktop\777\hhparser\FileName.txt", FileMode.Create, FileAccess.Write));//записываем строку в файл
                 SW.Write(s[0]);
                 SW.Close();
             }
@@ -53,7 +53,7 @@ namespace _777
                     "') or(Query_name.name_query='" + s[1] +
                     "')))begin (Select distinct Name_vacancy.name_vacancy from Name_vacancy,Vacancy, Query,Query_name,Query_vacancy where Name_vacancy.id_name_vacancy=Vacancy.id_name_vacancy and Query.id_query= Query_vacancy.id_query and Query_vacancy.id_vacancy=Vacancy.id_vacancy and Query_name.id_query_name = Query.id_query_name  and ((Query_name.name_query ='" + s[0] +
                     "') or(Query_name.name_query='" + s[1] + "'))) end";
-                StreamWriter SW = new StreamWriter(new FileStream(@"C:\Users\dns\Desktop\учеба\диплом\777\hhparser\FileName.txt", FileMode.Create, FileAccess.Write));//записываем строку в файл
+                StreamWriter SW = new StreamWriter(new FileStream(@"C:\Users\dns\Desktop\777\hhparser\FileName.txt", FileMode.Create, FileAccess.Write));//записываем строку в файл
                 SW.Write(s[0]+"+"+s[1]);
                 SW.Close();
             }
@@ -63,7 +63,7 @@ namespace _777
                 "') or(Query_name.name_query='" + s[1] +
                 "')or(Query_name.name_query='" + s[2] + "')))begin (Select distinct Name_vacancy.name_vacancy from Name_vacancy,Vacancy, Query,Query_name,Query_vacancy where Name_vacancy.id_name_vacancy=Vacancy.id_name_vacancy and Query.id_query= Query_vacancy.id_query and Query_vacancy.id_vacancy=Vacancy.id_vacancy and Query_name.id_query_name = Query.id_query_name  and ((Query_name.name_query ='" + s[0] +
                 "') or(Query_name.name_query='" + s[1] + "')or(Query_name.name_query='" + s[2] + "'))) end";
-                StreamWriter SW = new StreamWriter(new FileStream(@"C:\Users\dns\Desktop\учеба\диплом\777\hhparser\FileName.txt", FileMode.Create, FileAccess.Write));//записываем строку в файл
+                StreamWriter SW = new StreamWriter(new FileStream(@"C:\Users\dns\Desktop\777\hhparser\FileName.txt", FileMode.Create, FileAccess.Write));//записываем строку в файл
                 SW.Write(s[0] +"+"+ s[1]+"+"+s[2]);
                 SW.Close();
             }
@@ -105,7 +105,7 @@ namespace _777
                     if (result == DialogResult.Yes) {
                         try
                         {
-                            Process.Start("C://Users//dns//Desktop//учеба//диплом//777//hhparser//hhparser.exe");
+                            Process.Start("C://Users//dns//Desktop//777//hhparser//hhparser.exe");
                         }
                         catch (Exception)
                         {
