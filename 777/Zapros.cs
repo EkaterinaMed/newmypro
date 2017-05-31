@@ -139,7 +139,7 @@ namespace _777
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SqlConnection cnn = new SqlConnection(@"Data Source=ASUS\SQLEXPRESS;Initial Catalog=hh;Integrated Security=True");
+            SqlConnection cnn = new SqlConnection(@"Data Source=(local)\SQLEXPRESS;Initial Catalog=hh;Integrated Security=True");
             SqlCommand cmd = new SqlCommand("infa1", cnn);//вызов ХП
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.Add("@name", SqlDbType.VarChar, 100);//объявление выходных параметров ХП
