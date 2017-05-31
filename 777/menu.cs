@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Diagnostics;
 using System.IO;
+using Microsoft.Win32;
 
 namespace _777
 {
@@ -85,14 +86,23 @@ namespace _777
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (File.Exists("C://Program Files (x86)//Microsoft SQL Server//120//Tools//Binn//ManagementStudio//Ssms.exe"))
+            RegistryView registryView = Environment.Is64BitOperatingSystem ? RegistryView.Registry64 : RegistryView.Registry32;
+            using (RegistryKey hklm = RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, registryView))
             {
-                DialogResult result = MessageBox.Show("SQL Server доступен", "Сообщение", MessageBoxButtons.OK,
-                        MessageBoxIcon.Information);// обработка ошибки
-            }
-            else
-            {                DialogResult result = MessageBox.Show("Установите SQL Server", "Ошибка", MessageBoxButtons.OK,
+                RegistryKey instanceKey = hklm.OpenSubKey(@"SOFTWARE\Microsoft\Microsoft SQL Server\Instance Names\SQL", false);
+                if (instanceKey != null)
+                {
+                    foreach (var instanceName in instanceKey.GetValueNames())
+                    {
+                        DialogResult result = MessageBox.Show("На этом компьютере доступны следующий SQL Server: " + Environment.MachineName + "\\" + instanceName, "Сообщение", MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);// обработка ошибки
+                    }
+                }
+                else
+                {
+                    DialogResult result = MessageBox.Show("Установите SQL Server", "Ошибка", MessageBoxButtons.OK,
                         MessageBoxIcon.Error);// обработка ошибки
+                }
             }
         }
 
